@@ -1,0 +1,361 @@
+*{
+	font-family: sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+html {
+	overflow-y: scroll;
+   }
+body{
+	background: rgb(230, 230, 230);
+}
+
+
+/*-------------------------------------------------*/
+/*---------------ESTILOS DEL HEADER----------------*/
+/*-------------------------------------------------*/
+
+
+.pseudoheader{
+	border-top: 5px solid  #1a73e8;
+	width: 100%;
+	background: rgb(255, 255, 255);
+	margin-bottom: 30px;
+	height: 65px;
+}
+.header{
+	height: 65px;
+	border-top: 5px solid  #1a73e8;
+	width: 100%;
+	background: rgb(255, 255, 255);
+	-webkit-box-shadow: 0px 0.5px 1px #676767;
+	-moz-box-shadow: 0px 0.5px 1px #676767;
+	box-shadow: 0px 0.5px 1px #676767;
+	margin-bottom: 30px;
+	position: fixed;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header-buttons{
+	margin: 0px 20px;
+	display: block;
+	cursor: pointer;
+}
+.header-buttons:hover path{
+	fill: #1a73e8;
+	transition: all ease 0.3s;
+}
+.header-buttons:not(:hover) path{
+	fill: #bfbfbf;
+	transition: all ease 0.3s;
+}
+.header-buttons-selected path{
+	fill: #1a73e8;
+}
+.header-buttons-selected{
+	margin: 0px 20px;
+	display: block;
+	cursor: pointer;
+}
+
+
+/*-------------------------------------------------*/
+/*-----------ESTILOS DE CONTENIDO BASICO-----------*/
+/*-------------------------------------------------*/
+
+
+.formulario{
+	background: #fff;
+	width: 75%;
+	max-width: 1500px;
+	border-radius: 10px;
+	border:1px solid #abb2b7;
+	margin: 50px auto 50px auto;
+	padding: 20px;
+}
+.entrada{
+	border:1px solid #abb2b7;
+	border-radius: 5px;
+	width: 35%;
+	max-width: 350px;
+	margin: 15px auto 15px auto;
+	text-align: center;
+	padding: 0px 0px 0px 10px;
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+}
+.entrada:hover{
+	border: 1px solid #1a73e8;
+}
+.basico{
+	display: inline-block;
+	margin: 15px;
+}
+.texto-entrada{
+	font-size: 12px;
+	padding: 0px 5px;
+	color: #1a73e8;
+}
+
+
+/*-------------------------------------------------*/
+/*-----------ESTILOS DE CAMPO DE CEDULA------------*/
+/*-------------------------------------------------*/
+
+
+.guion{
+	display: inline;
+	color: #1a73e8;
+}
+.ci{
+	width: 61%;
+	max-width: 250px;
+	padding: 15px;
+	text-align: start;
+	border: none;
+	display: inline-block;
+	background: none;
+	font-size: 16px;
+	font-weight: 200;
+}
+.nacionalidad{
+	font-size:16px;
+	width: 50px;
+	font-weight: 200;
+	cursor: pointer;
+	border: none;
+	padding: 15px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: none;
+	background: url(img/sort-arrows-couple-pointing-up-and-down2.svg) 90% / 35% no-repeat #fff;
+}
+.cedula{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/*-------------------------------------------------*/
+/*---------------ESTILOS DE CAMPOS-----------------*/
+/*-------------------------------------------------*/
+
+
+.campo{
+	width: 91%;
+	max-width: 340px;
+	padding: 15px;
+	display: block;
+	color: #000000;
+	border: none;
+	background: none;
+	font-size: 16px;
+	font-weight: 200;
+}
+
+
+/*-------------------------------------------------*/
+/*--------ESTILOS DE SELECCIÓN DE INSTITUTO--------*/
+/*-------------------------------------------------*/
+
+
+.seleccion{
+	margin: 15px auto;
+	width: 91%;
+	max-width: 340px;
+	cursor: pointer;
+	text-align: center;
+	font-weight: 200;
+	display:block;
+	padding: 5px;
+	font-size: 20px;
+	border:none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border-radius: 7.5px;
+	color: #fff;
+	appearance: none;
+	background: url(img/sort-arrows-couple-pointing-up-and-down.svg) 97% / 5% no-repeat #1a73e8;
+}
+
+.seleccion:hover{
+	background-color: #2d87fc;
+	transition: all 0.2s;
+}
+
+.opcion1{
+	color: #1a73e8;
+	text-decoration: none;
+	font-weight: 200;
+	font-size: 17px;
+	margin: 15px 15px;
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+}
+.opcion1:visited{
+	color: #1a73e8;
+	text-decoration: none;
+	font-weight: 200;
+	font-size: 17px;
+}
+.opcion1:hover{
+	color: #0f448a;
+}
+
+
+/*-------------------------------------------------*/
+/*----------ESTILOS DE EL INPUT DE SEXO------------*/
+/*-------------------------------------------------*/
+
+
+input[type="radio"]{
+	opacity: 0;
+	position: absolute;
+	z-index: -1;
+}
+input[type="radio"]:checked+label{
+	background:#1056b1;
+	border: 2px solid #1056b1;
+}
+input[type="radio"]:hover+label{
+	background: #2d87fc;
+	border: 2px solid #2d87fc;
+}
+input[type="radio"]:active+label{
+	background:#002f6c;
+	border: 2px solid #002f6c;
+}
+.sexo{
+	margin: 15px auto;
+}
+label{
+	background: #1a73e8;
+	border: 2px solid transparent;
+	display: block;
+	width: 91%;
+	max-width: 340px;
+	text-align: center;
+	color: #fff;
+	font-weight: 200;
+	font-size: 20px;
+	padding: 5px 0px;
+	margin: auto;
+	cursor: pointer;
+}
+.hombre{
+	border-radius: 5px 5px 0px 0px;
+}
+.mujer{
+	border-radius: 0px 0px 5px 5px;
+}
+
+
+/*-------------------------------------------------*/
+/*-----------ESTILOS DE BOTÓN DE GUARDAR-----------*/
+/*-------------------------------------------------*/
+
+
+.guardar{
+	width: 150px;
+	height: 50px;
+	background: #1a73e8;
+	font-size: 20px;
+	color: rgb(230, 230, 230);
+	border: none;
+	font-weight: 900;
+	cursor: pointer;
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	display: block;
+	border-radius: 7.5px;
+}
+
+.guardar:hover{
+	background: #1662c6;
+}
+
+.guardar:active{
+	background: #104386;
+}
+
+.blanco{
+	color: #fff;
+}
+
+
+/*-------------------------------------------------*/
+/*----------------ESTILOS DE ERROR-----------------*/
+/*-------------------------------------------------*/
+
+
+.errortype{
+	box-shadow: none;
+	color: #d51111;
+}
+.errorcheck{
+	background: #d51111;
+	box-shadow: none;
+}
+.check{
+	background: url(img/sort-arrows-couple-pointing-up-and-down.svg) 97% / 5% no-repeat #d51111;
+	box-shadow: none;
+}
+
+
+/*-------------------------------------------------*/
+/*----------------ESTILOS DE MENU PRINCIPAL--------*/
+/*-------------------------------------------------*/
+
+
+.opciones{
+	margin: auto;
+	width: 90%;
+	max-width: 2000px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.opcion{
+	width: 200px;
+	background: #1a73e8;
+	margin: 15px;
+	padding: 15px;
+	border-radius: 5px;
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+}
+.opcion:hover{
+	background: #2d87fc;
+	transition: all 0.2s;
+}
+
+.img-eleccion{
+	width: 100px;
+	display: block;
+	margin: auto;
+}
+.descripcion{
+	display: block;
+	color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 200;
+	font-size: 20px;
+	margin: 15px;
+}
+a{
+	text-decoration: none;
+}
